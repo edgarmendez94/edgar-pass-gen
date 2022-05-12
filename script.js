@@ -7,20 +7,66 @@ var upperChar = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 var selection = [];
 
 // Write password to the #password input
+
+
+// Get random lower case letters from my array
+function getLower (){
+    
+    var randomLow = Math.floor(Math.random() * lowerChar.length)
+    console.log(lowerChar[randomLow])
+};
+
+console.log(getLower());
+
+// get random uppercase letters from my array
+function getUpper (){
+    
+    var randomUpper = Math.floor(Math.random() * upperChar.length)
+    console.log(upperChar[randomUpper])
+};
+
+console.log(getUpper());
+
+// get random digit from my array
+
+function getDigit (){
+    
+    var randomDigit = Math.floor(Math.random() * digits.length)
+    console.log(digits[randomDigit])
+};
+
+console.log(getDigit());
+
+
+// get random special char from my array
+
+function getSpecial (){
+    
+    var randomSpecial = Math.floor(Math.random() * specialChars.length)
+    console.log( specialChars[randomSpecial])
+};
+
+console.log(getSpecial());
+
+
+
+
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
  
   passwordText.value = password;
-
-  for (var i = 0; i < passwordTextLength; i++) {
-    
-    
-    
 }
 
+//   for (var i = 0; i < passwordTextLength; i++) {
+    
+    
+    
+// }
 
-}
+
+// }
 
 
 function generatePassword(passwordTextLength,willHaveSpecial,willHaveUpper,willHaveLower){
